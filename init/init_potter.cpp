@@ -31,11 +31,14 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 #include <sys/sysinfo.h>
+#include <android-base/logging.h>
 #include <android-base/properties.h>
 #include "property_service.h"
-#include "vendor_init.h"
 
-using android::init::property_set;
+
+
+namespace android {
+namespace init {
 
 void property_override(char const prop[], char const value[])
 {
@@ -124,3 +127,5 @@ void vendor_load_properties()
 
     check_device();
 }
+}  // namespace init
+} // namespace android
