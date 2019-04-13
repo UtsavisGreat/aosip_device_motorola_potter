@@ -21,6 +21,8 @@ $(call inherit-product, device/motorola/potter/full_potter.mk)
 # Inherit some common BootleggersROM stuff.
 $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 TARGET_DENSITY := xxhdpi
+DEVICE_MAINTAINERS := UtsavTheCunt
+BOOTLEGGERS_BUILD_TYPE := Shishufied
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
