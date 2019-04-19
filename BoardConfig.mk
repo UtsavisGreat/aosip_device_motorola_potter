@@ -85,7 +85,10 @@ TARGET_KERNEL_CONFIG := potter_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 KERNEL_TOOLCHAIN := $(PWD)/prebuilts/gcc/$(HOST_OS)-x86/aarch64-linux-gnu/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-TARGET_USE_SDCLANG := true
+TARGET_USE_SDCLANG   := true
+SDCLANG_FLAGS        := -O3 -fvectorize -Wno-vectorizer-no-neon -Wno-user-defined-warnings
+SDCLANG_FLAGS_2      := -O3 -fvectorize -Wno-vectorizer-no-neon -Wno-user-defined-warnings
+SDCLANG_COMMON_FLAGS := -O3 -fvectorize -Wno-vectorizer-no-neon -Wno-user-defined-warnings
 
 # Audio
 AUDIO_FEATURE_ENABLED_ALAC_OFFLOAD := true
