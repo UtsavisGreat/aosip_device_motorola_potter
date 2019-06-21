@@ -27,6 +27,7 @@ BOOTLEGGERS_BUILD_TYPE := Shishufied
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
+TARGET_PICK_BOOTANIMATION="3,5,7"
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
