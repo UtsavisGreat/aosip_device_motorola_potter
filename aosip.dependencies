@@ -3,14 +3,26 @@
     "remote": "github",
     "repository":  "CuntsSpace/potter",
     "target_path": "kernel/motorola/msm8953",
-    "branch": "r9.0-caf"
+    "branch": "lineage"
   },
   {
     "remote": "github",
-    "repository": "BootleggersROM-Devices/android_vendor_motorola_potter",
+    "repository": "RevengeOS-Devices/android_vendor_motorola_potter",
     "target_path": "vendor/motorola/potter",
-    "branch": "pasta"
+    "branch": "r9.0-caf"
   },
+{
+    "remote": "omnirom",
+    "repository": "android_hardware_qcom_wlan-caf",
+    "target_path": "hardware/qcom/wlan-caf",
+    "revision": "android-9.0"
+},
+{
+    "remote": "github",
+    "repository": "RevengeOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-9.1",
+    "target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-9.1",
+    "branch": "r9.0-caf"
+},
  {
     "remote": "github",
     "repository": "LineageOS/android_system_qcom",
