@@ -18,20 +18,19 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
-# Inherit some common BootleggersROM stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
-TARGET_DENSITY := xxhdpi
-DEVICE_MAINTAINERS := UtsavTheCunt
-BOOTLEGGERS_BUILD_TYPE := Shishufied
+# Inherit some common AOSIP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+
+# PixelStyle
+$(call inherit-product-if-exists, vendor/pixelstyle/config.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
-TARGET_PICK_BOOTANIMATION="3,5,7"
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := bootleg_potter
+PRODUCT_NAME := aosip_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
